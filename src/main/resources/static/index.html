@@ -1,24 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>Ejemplo </title>
-        <meta charset="UTF-8">        
+        <meta charset="UTF-8">
+        <meta name="desccription" content="Página dle curso Web y Patrones">
+        <meta name="keywords" content="html5, csss, web, fidelitas">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1 style="text-align: center; color: red">Página inicial</h1>
-        <h2>Titulo 2</h2>
-        <h3>Titulo nivel 3</h3>
-        <div style="text-align: center">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, 
-                <br> 
-                risus netus fames dictum diam imperdiet mollis arcu, sapien malesuada pulvinar dui varius conubia. Habitant commodo tincidunt cum risus netus pharetra a imperdiet libero, potenti litora nullam tortor primis mauris proin hendrerit, pulvinar ullamcorper laoreet nunc facilisis mollis erat morbi. Quisque diam magnis aliquet habitasse cum montes interdum pretium mauris volutpat, hendrerit torquent orci cursus etiam scelerisque justo quam parturient dictumst, luctus lacus risus massa lectus habitant phasellus ornare pharetra.</p>
-            <p>Lobortis eget consequat vivamus vel magnis risus suscipit, posuere litora himenaeos sollicitudin in nulla est, aliquet pellentesque placerat tellus blandit arcu. Nulla ullamcorper tempor felis suscipit platea in netus magna vel ornare, sociis neque sem phasellus conubia aptent morbi justo eleifend aliquam facilisis, natoque pharetra libero torquent ut tortor cursus suspendisse pretium. Convallis nostra vestibulum dictumst fringilla accumsan sapien taciti odio iaculis, pellentesque massa commodo purus velit quam ac montes, bibendum rhoncus suscipit penatibus habitant dignissim per placerat. Erat ad mus pulvinar natoque mi lectus rhoncus ornare mauris, pellentesque nisl malesuada commodo purus eleifend rutrum et, maecenas quam ligula nibh venenatis ut imperdiet luctus.        Eros fringilla magna mus tempus auctor montes ornare consequat nunc, facilisi dis odio morbi neque lobortis rhoncus nascetur, risus id ut feugiat vehicula diam urna parturient. Venenatis dis aliquam ullamcorper in varius auctor mus habitasse lobortis, leo eu ligula pulvinar suspendisse semper eleifend dapibus erat molestie, at consequat torquent nisi porta curae iaculis senectus. Ultricies diam consequat vulputate eu bibendum augue magna placerat, ornare natoque lectus eros rutrum tincidunt mi luctus, mauris gravida cum leo venenatis tellus ridiculus.</p>
-            <p>Eros fringilla magna mus tempus auctor montes ornare consequat nunc, facilisi dis odio morbi neque lobortis rhoncus nascetur, risus id ut feugiat vehicula diam urna parturient. Venenatis dis aliquam ullamcorper in varius auctor mus habitasse lobortis, leo eu ligula pulvinar suspendisse semper eleifend dapibus erat molestie, at consequat torquent nisi porta curae iaculis senectus. Ultricies diam consequat vulputate eu bibendum augue magna placerat, ornare natoque lectus eros rutrum tincidunt mi luctus, mauris gravida cum leo venenatis tellus ridiculus.</p>
-
+        <!-- Esta es una eqtiqueta de Header -->
+        <header id="encabezado">
+            <h1>Tienda en Línea</h1>
             <br>
-            <br>
+        </header>
+        <!-- Esta es una eqtiueta que indica al navegador que es posiblemente un menú -->
+        <nav id="menu">
+            <a href="Ejemplo9.html">Atrás</a>
+            <a href="Index.html">Home</a>
+            <a href="Ejemplo3.html">Adelante</a>
+        </nav>
+        <aside id="barraLateral">
+            <h2>Productos mas vendidos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit natoque nec risus integer commodo cubilia, tellus vehicula auctor conubia dignissim. Faucibus dignissim donec sapien a sociis et venenatis, commodo libero rhoncus eros habitasse est gravida ultricies, accumsan arcu parturient nunc erat facilisi. Leo aenean fringilla euismod faucibus class orci maecenas, congue pulvinar aliquam turpis duis habitasse mus, dui cras lacinia ornare tristique ultricies.</p>
+            <ol>
+                <li>Computadoras</li>
+                <li>Headsets</li>
+                <li>Teclados</li>
+            </ol>
+        </aside>
+        <section id="contenido">
+            <h2>Articulos principales</h2>
+            <article>
+                <header class="tituloProducto">Asus Vivobook</header>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit natoque nec risus integer commodo cubilia, tellus vehicula auctor conubia dignissim. Faucibus dignissim donec sapien a sociis et venenatis, commodo libero rhoncus eros habitasse est gravida ultricies, accumsan arcu parturient nunc erat facilisi. Leo aenean fringilla euismod faucibus class orci maecenas, congue pulvinar aliquam turpis duis habitasse mus, dui cras lacinia ornare tristique ultricies.</p>
+                <figure>
+                    <img src="images/Equipo1.jpg" alt="" width="200"/>
+                    <figcaption>Modelo de referencia</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header class="tituloProducto">Alienware ATD 9000</header>
+                <p>Sagittis sodales <cite>varius sociosqu iaculis arcu</cite> dis eu non taciti habitasse, aliquam phasellus porttitor feugiat erat in volutpat tempus ut. Enim urna pulvinar duis nam ac ultricies nulla lobortis, varius facilisis lacinia netus vitae facilisi pellentesque bibendum, turpis curae faucibus interdum imperdiet nibh penatibus. Faucibus pretium rhoncus lectus molestie nulla senectus erat vehicula nisl malesuada elementum placerat, leo semper cursus ut orci odio sem eget egestas lobortis. Rutrum aenean tellus mauris ac congue aliquet, maecenas et risus litora taciti quisque tempus, cum faucibus dui etiam magnis.</p>
+                <img src="images/Equipo2.jpg" alt="" width="200"/>
+                <figcaption>Producto estrella</figcaption>
+            </article>
+            <article>
+                <header class="tituloProducto">Impresora 3D portatil</header>
+                <p>Leo semper hendrerit senectus nisi platea posuere conubia pretium, laoreet quis non odio elementum habitasse inceptos ante, cubilia urna rutrum nam torquent aenean iaculis. Neque magna fusce potenti dis sociis facilisi sollicitudin primis per duis, laoreet vivamus platea nulla sagittis feugiat cras inceptos pretium, et eros nascetur cum arcu class hac faucibus velit. Dui nulla pulvinar lacinia taciti ut varius vitae porta nec conubia sem, platea massa tristique diam volutpat rhoncus per mollis at auctor, litora purus cras dictumst leo fermentum semper curae mus posuere.</p>
+                <img src="images/Equipo3.jpg" alt="" width="200"/>
+                <figcaption>Más económico</figcaption>
+            </article>
+            <article>
+                <header>Resumen de lineas de productos</header>
+                <p>Lineas de prodcutos que maneja la tienda</p>
+                <table border="0">
+                    <thead id="encabezadoTabla">
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre de línea</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaResumen">
+                        <tr>
+                            <td>1</td>
+                            <td>Tarjetas madre</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Monitores</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Teclados</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Mouse</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tajetas de video</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Headsets</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Laptops</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Cargadores</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table border="1" style="background-color: white;">
+                    <thead>
+                        <tr>
+                            <th>Titulo 1</th>
+                            <th colspan="2">Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                            <td rowspan="2">Dato 3</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        </div>
-        <p>Ultima linea</p>
+            </article>
+        </section>
+        <footer id="piePagina">Derechos Reservados &COPY <address style="display: inline">Tibás, Colima.</address></footer>
     </body>
 </html>
