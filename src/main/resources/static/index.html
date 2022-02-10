@@ -6,19 +6,23 @@
         <meta name="desccription" content="Página dle curso Web y Patrones">
         <meta name="keywords" content="html5, csss, web, fidelitas">
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <!-- Esta es una eqtiqueta de Header -->
-        <header id="encabezado">
-            <h1>Tienda en Línea</h1>
-            <br>
-        </header>
         <!-- Esta es una eqtiueta que indica al navegador que es posiblemente un menú -->
-        <nav id="menu">
-            <a href="Ejemplo9.html">Atrás</a>
-            <a href="Index.html">Home</a>
-            <a href="Ejemplo3.html">Adelante</a>
-        </nav>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">TechShop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Ejemplo9.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Ejemplo3.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframe.html">iFrame</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formularios.html">Formularios</a></li>
+                </ul>
+            </nav>
+        </header>
         <aside id="barraLateral">
             <h2>Productos mas vendidos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit natoque nec risus integer commodo cubilia, tellus vehicula auctor conubia dignissim. Faucibus dignissim donec sapien a sociis et venenatis, commodo libero rhoncus eros habitasse est gravida ultricies, accumsan arcu parturient nunc erat facilisi. Leo aenean fringilla euismod faucibus class orci maecenas, congue pulvinar aliquam turpis duis habitasse mus, dui cras lacinia ornare tristique ultricies.</p>
