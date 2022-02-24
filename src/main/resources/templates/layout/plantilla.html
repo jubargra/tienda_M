@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Techshop</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header th:fragment="header">
+            <h1 style="color: blue;">Techshop</h1>
+            <br>
+            <a th:href="@{/}">Home</a>
+        </header>
+        
+        <footer th:fragment="footer">
+            <p>&COPY; Derechos reservados 2022</p>
+            Costa Rica
+        </footer>
+    </body>
+</html>
