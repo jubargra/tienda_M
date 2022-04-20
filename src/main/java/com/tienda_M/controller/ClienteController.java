@@ -1,21 +1,33 @@
 
 package com.tienda_M.controller;
 
+import com.tienda_M.dao.ClienteDao;
 import com.tienda_M.domain.Cliente;
+import com.tienda_M.service.ClienteReportService;
 import com.tienda_M.service.ClienteService;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 
 @Controller
 @Slf4j
 public class ClienteController {
-    
+        
     @Autowired
     private ClienteService clienteService;
+    
+    @Autowired    
+    private ClienteReportService clienteReportService;
     
     @GetMapping("/cliente/listado")
     public String inicio(Model model) {
@@ -55,4 +67,22 @@ public class ClienteController {
         clienteService.delete(cliente);
         return "redirect:/cliente/listado";
     }
+    
+    @GetMapping(value = "/cliente/ReporteClientes", produces = MediaType.APPLICATION_PDF_VALUE)
+    public @ResponseBody
+    byte[] getFile() throws IOException {
+        try {
+            FileInputStream fis = new FileInputStream(new File(clienteReportService.generateReport()));
+            byte[] targetArray = new byte[fis.available()];
+            fis.read(targetArray);
+            return targetArray;
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+ return null;
+ }
 }

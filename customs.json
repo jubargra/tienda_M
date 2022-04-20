@@ -10,6 +10,9 @@
         "th:checked": {
             "context": "input"
         },
+        "sec:authorize": {
+            "context": "div"
+        },
         "th:replace": {
             "context": "header"
         },
